@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  gui:
+    container_name: sparql_gui
+    build: .
+    volumes: 
+      - .:/usr/share/nginx/html
+    ports:
+      - 8080:80
