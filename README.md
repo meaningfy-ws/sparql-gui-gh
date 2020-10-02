@@ -3,7 +3,7 @@
 A lightweight GUI to load queries from repositories on the web into an IDE-like environment in your browser.
 
 ## Description
-This project provides mainly glue code. It makes heavy use
+This project was created by [Joachim Neubert](https://github.com/jneubert). It makes heavy use
 of Laurens Rietveld's great [YASQE](http://yasqe.yasgui.org/) and
 [YASR](http://yasr.yasgui.org/) javascript libraries, part of his
 [YASGUI](http://yasgui.org) project.
@@ -12,6 +12,11 @@ Read more about the SPARQL GUI here: https://zbw.eu/beta/sparql-lab/about/
 > This fork uses an NGINX docker image to run the service.
 
 ![default view](resources/default.png)
+
+## Authors and acknowledgment
+Forked from: [ZBW - Leibniz Information Centre for Economics](https://github.com/zbw/sparql-gui-gh)
+
+Adapted by: [Meaningfy](https://github.com/meaningfy-ws)
 
 ## Installation
 ---
@@ -44,11 +49,5 @@ Argument | Description
 `queryRef` | URL of a query on the web (no default). Works with GitHub API as in the example below, and presumably with other public repository URLs (CORS on the repository server required).
 `hide`     | With `hide=1`, the query pane is hidden from display (defaults to hide=0).
 
-### Example:
-
-- [Added concepts](http://localhost:8080/?endpoint=http://zbw.eu/beta/sparql/stwv/query&queryRef=https://api.github.com/repos/jneubert/skos-history/contents/sparql/added_concepts.rq)
-
-## Authors and acknowledgment
-Forked from: [ZBW - Leibniz Information Centre for Economics](https://github.com/zbw/sparql-gui-gh)
-
-Adapted by: [Meaningfy](https://github.com/meaningfy-ws)
+### Example 
+[http://localhost:8080/?endpoint=https://es.dbpedia.org/sparql&queryRef=https://api.github.com/repos/meaningfy-ws/sparql-gui-gh/contents/examples/select-example.rq](http://localhost:8080/?endpoint=https://es.dbpedia.org/sparql&queryRef=https://api.github.com/repos/meaningfy-ws/sparql-gui-gh/contents/examples/select-example.rq)
