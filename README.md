@@ -1,4 +1,4 @@
-# Meaningfy's SPARQL GUI 
+# SPARQL Runner 
 
 A lightweight GUI to load queries from repositories on the web into an IDE-like environment in your browser.
 
